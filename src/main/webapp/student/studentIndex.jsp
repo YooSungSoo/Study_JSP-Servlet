@@ -11,8 +11,8 @@ function filterCourses(majorSeq) {
     
     for (var i = 1; i < table.rows.length; i++) {
         var row = table.rows[i];
-        var majorCell = row.cells[2]; // Assuming major_seq is in the third cell
-        var professorCell = row.cells[1]; // Assuming professor_seq is in the second cell
+        var majorCell = row.cells[2];
+        var professorCell = row.cells[1];
 
         if (majorSeq === "all" || majorCell.innerText.trim() === majorSeq) {
             row.style.display = "table-row";
@@ -53,8 +53,7 @@ function filterCourses(majorSeq) {
                     pstmt.close();
                     stmt.close();
                     dbMgr.freeConnection(conn);
-
-                    // staff_name 출력
+ 
                     out.print(studentName);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -154,7 +153,6 @@ function filterCourses(majorSeq) {
             try {
                 currentPage = Integer.parseInt(pageParam);
             } catch (NumberFormatException e) {
-                // 예외 처리
             }
         }
 

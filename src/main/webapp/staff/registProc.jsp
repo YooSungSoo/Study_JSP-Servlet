@@ -8,14 +8,12 @@
 <head>
 <title>과목 등록 결과</title>
 <script>
-    // 일정 시간 후에 regist.jsp로 리다이렉트하는 함수
     function redirectToRegist() {
         setTimeout(function() {
             location.href = 'staffIndex.jsp';
-        }, 3000); // 3초 후에 리다이렉트
+        }, 3000);
     }
 
-    // 페이지 로드시 리다이렉트 함수 호출
     window.onload = redirectToRegist;
 </script>
 </head>

@@ -11,7 +11,6 @@
     <div align="center">
         <h1>학점부여 결과</h1>
         <%
-        // 학점 데이터를 전달받음
         String courseSeq = request.getParameter("courseSeq");
         Enumeration<String> paramNames = request.getParameterNames();
         Map<String, String> gradesMap = new HashMap<>();
@@ -29,7 +28,6 @@
             DBConnectionMgr dbMgr = DBConnectionMgr.getInstance();
             Connection conn = dbMgr.getConnection();
 
-            // 학점 데이터를 course_registration 테이블에 업데이트
             String updateQuery = "UPDATE course_registration SET course_grade = ? WHERE student_seq = ? AND course_seq = ?";
             PreparedStatement updateStmt = conn.prepareStatement(updateQuery);
 

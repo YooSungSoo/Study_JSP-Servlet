@@ -34,6 +34,6 @@
 
 <script>
     setTimeout(function() {
-        location.href = "studentIndex.jsp"; // studentIndex 페이지로 이동
+        location.href = "studentIndex.jsp"; 
     }, 3000); // 3초 후에 이동
 </script>

@@ -74,7 +74,6 @@ function showAllCourses() {
                     stmt.close();
                     dbMgr.freeConnection(conn);
 
-                    // staff_name 출력
                     out.print(staffName);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -101,7 +100,7 @@ function showAllCourses() {
             try {
                 currentPage = Integer.parseInt(pageParam);
             } catch (NumberFormatException e) {
-                // 예외 처리
+
             }
         }
 

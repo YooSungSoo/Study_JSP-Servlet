@@ -7,7 +7,7 @@
 <body>
     <div align="center">
         <h1>학점부여</h1>
-        <form action="SaveGradesServlet" method="post">
+        <form action="gradePopProc.jsp" method="post">
             <table border="1" width="1000" cellpadding="10" style="margin-left: auto; margin-right: auto;">
                 <tr>
                     <td>학생명</td>
