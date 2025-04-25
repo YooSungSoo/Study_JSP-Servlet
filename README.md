@@ -1,3 +1,3 @@
-Study_JSP
+## Study_JSP
 
-Make Course registration system
+### Make Course registration system
